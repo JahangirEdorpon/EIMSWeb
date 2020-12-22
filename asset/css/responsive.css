@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+
+    .top-item ul li{
+        list-style: none;
+        float: left;
+        border-right: 1px solid #ddd;
+        padding: 0 12px ;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 75% ;
+    }
+
+    .mojib img{
+        width: 60%;
+    }
+
+    .heading h4{
+        color:var(--green);
+        font-weight: bold;
+        -webkit-text-stroke:1px var(--green);
+        letter-spacing: 1.4px;
+        font-size:16px ;
+        text-align: left;
+       }
+       
+    .heading h2{
+           clear: none;
+           font-family: "Merriweather Sans",sans-serif;
+           font-size: 30px;
+           font-weight: bold;
+           line-height: 1;
+           margin-bottom: 6px;
+           color: var(--secondary);
+    }
+
+    .menu ul li a{
+        color:var(--white);
+        padding:9px 15px ;
+        font-size: 15px ;
+        font-weight: 600;
+        
+    }
+
+
+    .msg-chair img{
+        width: 80%;
+        height: auto;
+    }
+
+    .titles h2 {
+        font-size: 20px;
+    }
+
+
+  }
+
+  @media (max-width: 768px) {
+
+    .top-item ul li{
+        list-style: none;
+        float: left;
+        border-right: 1px solid #ddd;
+        padding: 0 6px ;
+        align-items: center;
+        font-size: 12px;
+    }
+
+  }
