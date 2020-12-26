@@ -90,7 +90,7 @@ a:hover{
  -webkit-text-stroke:1px var(--green);
  letter-spacing: 1.4px;
  font-size:20px;
- text-align: left;
+ text-align: center;
 }
 
 .heading h2{
@@ -101,6 +101,7 @@ a:hover{
     line-height: 1;
     margin-bottom: 6px;
     color: var(--secondary);
+    text-align: center;
 }
 
 .mojib img{
@@ -126,7 +127,7 @@ a:hover{
     /* margin-top: 8px; */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 9999;
   }
   
   .dropdown-content a {
@@ -144,7 +145,7 @@ a:hover{
 
     }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {display: block;transition: 3s;}
   
 
 
@@ -173,7 +174,48 @@ a:hover{
       text-decoration: underline;
   }
 
+/* Hero Header Style */
+.hero-header{
+    background-image: url(../img/slider/slider2.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
 
+
+
+#overlay:after {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #294a70b7;
+    top: 0;
+    z-index: -1;
+}
+
+#overlay{
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumb{
+    margin: 0;
+    padding: 50px 0;
+}
+
+.breadcrumb li a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.hero-header .active{
+    color: var(--yellow);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
 
 
   /*Header End*/
@@ -472,3 +514,177 @@ a:hover{
 .footer-nav li:not(:first-child):before {
     color: #4e718d;
 }
+
+
+/* About page  start*/
+
+
+.about-section{
+    padding: 20px 0;
+}
+
+.ab-title{
+    padding: 20px 20px 20px 0px;
+}
+
+.ab-title h2{
+    font-size: 2.5rem;
+    border-bottom: 1px dotted var(--secondary);
+    border-top: 1px dotted var(--secondary);
+    font-family: "Merriweather Sans",sans-serif;
+    color: var(--primary);
+}
+
+.ab-title p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+/* Image Gellary */
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.gallery_product h2{
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.dates{
+    color: rgb(131, 131, 131);
+}
+
+
+  /* End Image Gellary */
+
+
+  /* Start Video Gallary */
+  .video {
+    background: #fff;
+    padding-bottom: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    width: 23%; /* Thumbnails 4 across */
+    margin: 1%;
+    float: left;
+  }
+
+   /* 
+   These keep the height of each video thumbnail consistent between YouTube and Vimeo.
+   Each can have thumbnail sizes that vary by 1px and are likely break your layout. 
+   */
+
+  .video figure {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+    
+  }
+  .video figure a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 0;
+  }
+
+ 
+
+  /* These are my preferred rollover styles. */
+
+  .video img {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .video img:hover, .video img:active, .video img:focus {
+    opacity: 0.75;
+  }
+
+  /* End Video gallary */
+
+/* Contact us Page */
+
+.address{
+    background-color: var(--secondary);
+    padding:20px;
+}
+
+.address h2{
+    font-size: 2.5rem;
+    border-bottom: 1px dotted var(--secondary);
+    border-top: 1px dotted var(--secondary);
+    font-family: "Merriweather Sans",sans-serif;
+    color: var(--primary);
+    color: #fff;
+}
+
+.address ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 2;
+    color: #fff;
+}
+
+.address ul li i{
+    color: var(--yellow);
+}
+
+.map{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.map iframe{
+    width: 100%;
+    height: 600px;
+}
+

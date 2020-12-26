@@ -56,6 +56,8 @@
 
   }
 
+  
+
   @media (max-width: 768px) {
 
     .top-item ul li{
@@ -67,4 +69,11 @@
         font-size: 12px;
     }
 
+  }
+
+
+  @media (max-width:425px) {
+    .map iframe{
+        height: 200px;
+    }
   }
